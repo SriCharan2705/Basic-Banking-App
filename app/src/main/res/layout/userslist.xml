@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaadcb"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/CustName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name  :    "
+            android:textColor="#050505"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/AccNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CustName"
+            android:layout_marginTop="7dp"
+            android:text="Account Number :   "
+            android:textColor="#252424"
+
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/AccBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AccNum"
+            android:layout_marginTop="10dp"
+
+            android:text="Balance : "
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
